@@ -70,6 +70,7 @@
 		EC61DC5721EF714400C1D32C /* ObservableType+FilterNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+FilterNil.swift"; sourceTree = "<group>"; };
 		EC61DC5B21EF717A00C1D32C /* Error+JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+JSONError.swift"; sourceTree = "<group>"; };
 		EC61DC5F21EF71E700C1D32C /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		EC61DC6F21EF74DA00C1D32C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA45EF6BDE31E0488A3F75AE /* Pods-GitHubUserFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserFetcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubUserFetcher/Pods-GitHubUserFetcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +133,7 @@
 				EC430E0821EF67B400726E78 /* GitHubUserFetcher */,
 				EC430E1D21EF67B400726E78 /* GitHubUserFetcherTests */,
 				EC430E2821EF67B400726E78 /* GitHubUserFetcherUITests */,
+				EC61DC6B21EF74A800C1D32C /* Model */,
 				8B5CF0B9096E1D2B04FCF4F6 /* Pods */,
 				EC430E0721EF67B400726E78 /* Products */,
 				EC61DC4F21EF6F9100C1D32C /* Utility */,
@@ -277,6 +279,14 @@
 				EC61DC5F21EF71E700C1D32C /* OptionalType.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EC61DC6B21EF74A800C1D32C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC6C21EF74C200C1D32C /* User */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +564,7 @@
 				EC430E0A21EF67B400726E78 /* AppDelegate.swift in Sources */,
 				EC61DC5321EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift in Sources */,
 				EC430E3F21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift in Sources */,
+				EC61DC7021EF74DA00C1D32C /* User.swift in Sources */,
 				EC61DC6021EF71E700C1D32C /* OptionalType.swift in Sources */,
 				EC61DC5621EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift in Sources */,
 				EC430E3C21EF691700726E78 /* UsersTableViewController.swift in Sources */,
