@@ -23,10 +23,14 @@ extension APIService
 
 extension Reactive where Base: APIService.Users
 {
-    func list() -> Single<[User]>
+    func list(page: Int, limit: Int = 30) -> Single<[User]>
     {
+        let parameters: [String: Any] = [ .page: page,
+                                          .limit: limit ]
+        
         return fetch(from: .default,
-                     method: .get)
+                     method: .get,
+                     parameters: parameters)
             .decodeJSON([User].self)
             .throwErrorOnNilElement()
     }
@@ -38,4 +42,11 @@ fileprivate typealias Path = String
 fileprivate extension Path
 {
     static var `default`: String { return "/users" }
+}
+
+fileprivate typealias Parameter = String
+fileprivate extension Parameter
+{
+    static var page: String { return "page" }
+    static var limit: String { return "limit" }
 }

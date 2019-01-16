@@ -31,6 +31,7 @@
 		EC61DC7021EF74DA00C1D32C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6F21EF74DA00C1D32C /* User.swift */; };
 		EC61DC7321EF7D4000C1D32C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC7221EF7D4000C1D32C /* UserViewModel.swift */; };
 		EC61DC7B21EF811A00C1D32C /* UsersTableViewController.UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC7A21EF811A00C1D32C /* UsersTableViewController.UserTableViewCell.swift */; };
+		EC61DC7E21EF8DE100C1D32C /* UsersTableViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC7D21EF8DE100C1D32C /* UsersTableViewController+UITableViewDelegate.swift */; };
 		EC61DC8921EF938600C1D32C /* UIScrollView+IsButtomReached.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC8821EF938600C1D32C /* UIScrollView+IsButtomReached.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		EC61DC6F21EF74DA00C1D32C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC61DC7221EF7D4000C1D32C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		EC61DC7A21EF811A00C1D32C /* UsersTableViewController.UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.UserTableViewCell.swift; sourceTree = "<group>"; };
+		EC61DC7D21EF8DE100C1D32C /* UsersTableViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersTableViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		EC61DC8821EF938600C1D32C /* UIScrollView+IsButtomReached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+IsButtomReached.swift"; sourceTree = "<group>"; };
 		FA45EF6BDE31E0488A3F75AE /* Pods-GitHubUserFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserFetcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubUserFetcher/Pods-GitHubUserFetcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,6 +327,22 @@
 				EC61DC7221EF7D4000C1D32C /* UserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC61DC7C21EF8DC700C1D32C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC7D21EF8DE100C1D32C /* UsersTableViewController+UITableViewDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		EC61DC8621EF936E00C1D32C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC8721EF937B00C1D32C /* UIScrollView */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		EC61DC8721EF937B00C1D32C /* UIScrollView */ = {
