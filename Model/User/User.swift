@@ -13,6 +13,7 @@ struct User: Codable
     let login: String
     let id: Int
     let avatar_url: URL
-    let url: URL
+    let type: String
+    let html_url: URL
     let site_admin: Bool
 }

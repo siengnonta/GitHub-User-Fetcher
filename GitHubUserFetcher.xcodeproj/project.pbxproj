@@ -29,6 +29,7 @@
 		EC61DC6821EF739B00C1D32C /* DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6721EF739B00C1D32C /* DataFetchable.swift */; };
 		EC61DC6A21EF73EF00C1D32C /* APIService+DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6921EF73EF00C1D32C /* APIService+DataFetchable.swift */; };
 		EC61DC7021EF74DA00C1D32C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6F21EF74DA00C1D32C /* User.swift */; };
+		EC61DC7321EF7D4000C1D32C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC7221EF7D4000C1D32C /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		EC61DC6721EF739B00C1D32C /* DataFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchable.swift; sourceTree = "<group>"; };
 		EC61DC6921EF73EF00C1D32C /* APIService+DataFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+DataFetchable.swift"; sourceTree = "<group>"; };
 		EC61DC6F21EF74DA00C1D32C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC61DC7221EF7D4000C1D32C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		EC61DC8821EF938600C1D32C /* UIScrollView+IsButtomReached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+IsButtomReached.swift"; sourceTree = "<group>"; };
 		FA45EF6BDE31E0488A3F75AE /* Pods-GitHubUserFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserFetcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubUserFetcher/Pods-GitHubUserFetcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -312,6 +314,14 @@
 				EC61DC6F21EF74DA00C1D32C /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		EC61DC7121EF7C9A00C1D32C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC7221EF7D4000C1D32C /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EC61DC8721EF937B00C1D32C /* UIScrollView */ = {
@@ -601,6 +611,7 @@
 				EC61DC8921EF938600C1D32C /* UIScrollView+IsButtomReached.swift in Sources */,
 				EC61DC6221EF72F300C1D32C /* APIService.swift in Sources */,
 				EC61DC7021EF74DA00C1D32C /* User.swift in Sources */,
+				EC61DC7321EF7D4000C1D32C /* UserViewModel.swift in Sources */,
 				EC61DC6621EF734A00C1D32C /* APIService.Users.swift in Sources */,
 				EC61DC6821EF739B00C1D32C /* DataFetchable.swift in Sources */,
 				EC61DC6021EF71E700C1D32C /* OptionalType.swift in Sources */,
