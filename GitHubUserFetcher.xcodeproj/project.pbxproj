@@ -11,7 +11,6 @@
 		3AC81AD6743FA093EEF46B05 /* Pods_GitHubUserFetcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E45DBBA83859A4641E379C /* Pods_GitHubUserFetcherUITests.framework */; };
 		E1BE333E29289BD84C8B93C0 /* Pods_GitHubUserFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0E5B566E990804870928B9 /* Pods_GitHubUserFetcher.framework */; };
 		EC430E0A21EF67B400726E78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC430E0921EF67B400726E78 /* AppDelegate.swift */; };
-		EC430E0C21EF67B400726E78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC430E0B21EF67B400726E78 /* ViewController.swift */; };
 		EC430E1121EF67B400726E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC430E1021EF67B400726E78 /* Assets.xcassets */; };
 		EC430E1421EF67B400726E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC430E1221EF67B400726E78 /* LaunchScreen.storyboard */; };
 		EC430E1F21EF67B400726E78 /* GitHubUserFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC430E1E21EF67B400726E78 /* GitHubUserFetcherTests.swift */; };
@@ -49,7 +48,6 @@
 		E82E981E193A0EFEDC6D00B3 /* Pods-GitHubUserFetcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserFetcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubUserFetcherTests/Pods-GitHubUserFetcherTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC430E0621EF67B400726E78 /* GitHubUserFetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubUserFetcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC430E0921EF67B400726E78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC430E0B21EF67B400726E78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC430E1021EF67B400726E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC430E1321EF67B400726E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC430E1521EF67B400726E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			children = (
 				EC430E3721EF689E00726E78 /* Module */,
 				EC430E0921EF67B400726E78 /* AppDelegate.swift */,
-				EC430E0B21EF67B400726E78 /* ViewController.swift */,
 				EC430E1021EF67B400726E78 /* Assets.xcassets */,
 				EC430E1221EF67B400726E78 /* LaunchScreen.storyboard */,
 				EC430E1521EF67B400726E78 /* Info.plist */,
@@ -481,7 +478,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC430E4221EF69CA00726E78 /* UsersPresenter.swift in Sources */,
-				EC430E0C21EF67B400726E78 /* ViewController.swift in Sources */,
 				EC430E0A21EF67B400726E78 /* AppDelegate.swift in Sources */,
 				EC430E3F21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift in Sources */,
 				EC430E3C21EF691700726E78 /* UsersTableViewController.swift in Sources */,

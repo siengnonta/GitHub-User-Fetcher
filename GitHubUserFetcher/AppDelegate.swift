@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let viewcontroller = ViewController()
+        let usersTableViewcontroller = UsersTableViewController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = viewcontroller
+        window?.rootViewController = usersTableViewcontroller
         window?.makeKeyAndVisible()
         
         return true
