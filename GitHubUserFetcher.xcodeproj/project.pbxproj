@@ -23,6 +23,12 @@
 		EC61DC5821EF714400C1D32C /* ObservableType+FilterNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5721EF714400C1D32C /* ObservableType+FilterNil.swift */; };
 		EC61DC5C21EF717A00C1D32C /* Error+JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5B21EF717A00C1D32C /* Error+JSONError.swift */; };
 		EC61DC6021EF71E700C1D32C /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5F21EF71E700C1D32C /* OptionalType.swift */; };
+		EC61DC6221EF72F300C1D32C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6121EF72F300C1D32C /* APIService.swift */; };
+		EC61DC6421EF731400C1D32C /* APIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6321EF731400C1D32C /* APIDecodable.swift */; };
+		EC61DC6621EF734A00C1D32C /* APIService.Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6521EF734A00C1D32C /* APIService.Users.swift */; };
+		EC61DC6821EF739B00C1D32C /* DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6721EF739B00C1D32C /* DataFetchable.swift */; };
+		EC61DC6A21EF73EF00C1D32C /* APIService+DataFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6921EF73EF00C1D32C /* APIService+DataFetchable.swift */; };
+		EC61DC7021EF74DA00C1D32C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC6F21EF74DA00C1D32C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,11 @@
 		EC61DC5721EF714400C1D32C /* ObservableType+FilterNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+FilterNil.swift"; sourceTree = "<group>"; };
 		EC61DC5B21EF717A00C1D32C /* Error+JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+JSONError.swift"; sourceTree = "<group>"; };
 		EC61DC5F21EF71E700C1D32C /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		EC61DC6121EF72F300C1D32C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EC61DC6321EF731400C1D32C /* APIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDecodable.swift; sourceTree = "<group>"; };
+		EC61DC6521EF734A00C1D32C /* APIService.Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.Users.swift; sourceTree = "<group>"; };
+		EC61DC6721EF739B00C1D32C /* DataFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchable.swift; sourceTree = "<group>"; };
+		EC61DC6921EF73EF00C1D32C /* APIService+DataFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+DataFetchable.swift"; sourceTree = "<group>"; };
 		EC61DC6F21EF74DA00C1D32C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA45EF6BDE31E0488A3F75AE /* Pods-GitHubUserFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserFetcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubUserFetcher/Pods-GitHubUserFetcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +236,9 @@
 		EC61DC4E21EF6F4200C1D32C /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				EC61DC6121EF72F300C1D32C /* APIService.swift */,
+				EC61DC6521EF734A00C1D32C /* APIService.Users.swift */,
+				EC61DC6921EF73EF00C1D32C /* APIService+DataFetchable.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -277,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				EC61DC5F21EF71E700C1D32C /* OptionalType.swift */,
+				EC61DC6321EF731400C1D32C /* APIDecodable.swift */,
+				EC61DC6721EF739B00C1D32C /* DataFetchable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -287,6 +303,14 @@
 				EC61DC6C21EF74C200C1D32C /* User */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC61DC6C21EF74C200C1D32C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC6F21EF74DA00C1D32C /* User.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,9 +587,14 @@
 				EC61DC5821EF714400C1D32C /* ObservableType+FilterNil.swift in Sources */,
 				EC430E0A21EF67B400726E78 /* AppDelegate.swift in Sources */,
 				EC61DC5321EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift in Sources */,
+				EC61DC6421EF731400C1D32C /* APIDecodable.swift in Sources */,
 				EC430E3F21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift in Sources */,
+				EC61DC6221EF72F300C1D32C /* APIService.swift in Sources */,
 				EC61DC7021EF74DA00C1D32C /* User.swift in Sources */,
+				EC61DC6621EF734A00C1D32C /* APIService.Users.swift in Sources */,
+				EC61DC6821EF739B00C1D32C /* DataFetchable.swift in Sources */,
 				EC61DC6021EF71E700C1D32C /* OptionalType.swift in Sources */,
+				EC61DC6A21EF73EF00C1D32C /* APIService+DataFetchable.swift in Sources */,
 				EC61DC5621EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift in Sources */,
 				EC430E3C21EF691700726E78 /* UsersTableViewController.swift in Sources */,
 			);
