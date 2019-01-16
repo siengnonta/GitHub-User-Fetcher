@@ -18,6 +18,11 @@
 		EC430E3C21EF691700726E78 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC430E3B21EF691700726E78 /* UsersTableViewController.swift */; };
 		EC430E3F21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC430E3E21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift */; };
 		EC430E4221EF69CA00726E78 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC430E4121EF69CA00726E78 /* UsersPresenter.swift */; };
+		EC61DC5321EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5221EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift */; };
+		EC61DC5621EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5521EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift */; };
+		EC61DC5821EF714400C1D32C /* ObservableType+FilterNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5721EF714400C1D32C /* ObservableType+FilterNil.swift */; };
+		EC61DC5C21EF717A00C1D32C /* Error+JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5B21EF717A00C1D32C /* Error+JSONError.swift */; };
+		EC61DC6021EF71E700C1D32C /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61DC5F21EF71E700C1D32C /* OptionalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,11 @@
 		EC430E3B21EF691700726E78 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		EC430E3E21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersTableViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		EC430E4121EF69CA00726E78 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		EC61DC5221EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequenceType+MapJSON.swift"; sourceTree = "<group>"; };
+		EC61DC5521EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequenceType+ThrowErrorOnNilElement.swift"; sourceTree = "<group>"; };
+		EC61DC5721EF714400C1D32C /* ObservableType+FilterNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+FilterNil.swift"; sourceTree = "<group>"; };
+		EC61DC5B21EF717A00C1D32C /* Error+JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+JSONError.swift"; sourceTree = "<group>"; };
+		EC61DC5F21EF71E700C1D32C /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
 		FA45EF6BDE31E0488A3F75AE /* Pods-GitHubUserFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubUserFetcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubUserFetcher/Pods-GitHubUserFetcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,12 +127,14 @@
 		EC430DFD21EF67B400726E78 = {
 			isa = PBXGroup;
 			children = (
+				EC61DC4E21EF6F4200C1D32C /* APIService */,
+				A6F1F7E21E05FE3949FAFBEB /* Frameworks */,
 				EC430E0821EF67B400726E78 /* GitHubUserFetcher */,
 				EC430E1D21EF67B400726E78 /* GitHubUserFetcherTests */,
 				EC430E2821EF67B400726E78 /* GitHubUserFetcherUITests */,
-				EC430E0721EF67B400726E78 /* Products */,
 				8B5CF0B9096E1D2B04FCF4F6 /* Pods */,
-				A6F1F7E21E05FE3949FAFBEB /* Frameworks */,
+				EC430E0721EF67B400726E78 /* Products */,
+				EC61DC4F21EF6F9100C1D32C /* Utility */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +218,65 @@
 				EC430E4121EF69CA00726E78 /* UsersPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EC61DC4E21EF6F4200C1D32C /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		EC61DC4F21EF6F9100C1D32C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC5D21EF71D000C1D32C /* Protocol */,
+				EC61DC5021EF6FCB00C1D32C /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EC61DC5021EF6FCB00C1D32C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC5921EF716100C1D32C /* Swift */,
+				EC61DC5121EF6FDC00C1D32C /* RxSwift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC61DC5121EF6FDC00C1D32C /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC5221EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift */,
+				EC61DC5521EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift */,
+				EC61DC5721EF714400C1D32C /* ObservableType+FilterNil.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		EC61DC5921EF716100C1D32C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC5A21EF716600C1D32C /* Error */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		EC61DC5A21EF716600C1D32C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC5B21EF717A00C1D32C /* Error+JSONError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		EC61DC5D21EF71D000C1D32C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EC61DC5F21EF71E700C1D32C /* OptionalType.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,8 +549,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC430E4221EF69CA00726E78 /* UsersPresenter.swift in Sources */,
+				EC61DC5C21EF717A00C1D32C /* Error+JSONError.swift in Sources */,
+				EC61DC5821EF714400C1D32C /* ObservableType+FilterNil.swift in Sources */,
 				EC430E0A21EF67B400726E78 /* AppDelegate.swift in Sources */,
+				EC61DC5321EF70D900C1D32C /* PrimitiveSequenceType+MapJSON.swift in Sources */,
 				EC430E3F21EF693C00726E78 /* UsersTableViewController+UITableViewDataSource.swift in Sources */,
+				EC61DC6021EF71E700C1D32C /* OptionalType.swift in Sources */,
+				EC61DC5621EF712E00C1D32C /* PrimitiveSequenceType+ThrowErrorOnNilElement.swift in Sources */,
 				EC430E3C21EF691700726E78 /* UsersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
